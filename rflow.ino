@@ -1,7 +1,7 @@
 /* ****************************************************
  * ****                                           *****
- * ****  ESTACION DE SOLDADURA BGA Y REFLOW       *****
- * ****  VER: 0.9 RC1  by CyX                     *****
+ * ****  ESTACIÓN DE SOLDADURA BGA Y REFLOW       *****
+ * ****  VER: 0.9 RC1  by CyX - FabLab Mérida     *****
  * ****                                           *****
  * ****************************************************/
  
@@ -10,13 +10,13 @@
 #include <thermistor.h> //https://github.com/miguel5612/ThermistorLibrary
 
 
-// ##### Variables de configuracion ####
+// ##### Variables de configuración ####
 
-//Configuracion de hardware
+//Configuración de hardware
 int tipo_termistor = 1; //https://github.com/miguel5612/ThermistorLibrary#supported-thermistors
 int tasa_temp = 10;  // Grados de "caché" para que el estaño se funda
 
-//Configuracion de los pines
+//Configuración de los pines
 
 int pin_boton_mas = 6;
 int pin_boton_menos = 7;
@@ -26,7 +26,7 @@ int pin_termistor = A0;
 
 const int rs = 12, e = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;  //Pines de la pantalla
 
-// Estaticas
+// Estáticas
 int temp_min = 150;
 int temp_max = 280;
 int temp_act = temp_min;
@@ -41,7 +41,7 @@ LiquidCrystal lcd(rs, e, d4, d5, d6, d7);
 
 bool inicializacion();
 void calentar();
-int tomar_temp();
+int tomar_temp(); // Candidata a irse
 
 void setup() {
   Serial.begin(9600);
