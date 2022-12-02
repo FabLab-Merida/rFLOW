@@ -28,7 +28,7 @@ const int rs = 12, e = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;  //Pines de la pantal
 
 // Estáticas
 int temp_min = 150;
-int temp_max = 280;
+int temp_max = 210;
 int temp_act = temp_min;
 
 // ##### Variables del programa ####
