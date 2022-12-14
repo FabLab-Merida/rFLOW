@@ -27,7 +27,7 @@ int pin_termistor = A0;
 const int rs = 12, e = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;  //Pines de la pantalla
 
 // Estáticas
-int temp_min = 40;
+int temp_min = 60;
 int temp_max = 210;
 int temp_act = temp_min;
 
@@ -75,10 +75,10 @@ bool inicializacion() {
     lcd.print("Temp. incial: ");
     lcd.print(temp_act);
     if (digitalRead(pin_boton_mas) == HIGH && temp_act >= temp_min && digitalRead(pin_boton_mas) == HIGH && temp_act < temp_max) {
-      temp_act += 10;
+      temp_act += 3;
     }
     if (digitalRead(pin_boton_menos) == HIGH && temp_act > temp_min && digitalRead(pin_boton_menos) == HIGH && temp_act <= temp_max) {
-      temp_act -= 10;
+      temp_act -= 3;
     }
     if (digitalRead(pin_boton_ok) == HIGH) {
       return true;
