@@ -14,7 +14,7 @@
 
 //Configuración de hardware
 int tipo_termistor = 1;  //https://github.com/miguel5612/ThermistorLibrary#supported-thermistors
-int tasa_temp = 10;      // Grados de "caché" para que el estaño se funda
+int tasa_temp = 3;      // Grados de "caché" para que el estaño se funda
 
 //Configuración de los pines
 
@@ -75,10 +75,10 @@ bool inicializacion() {
     lcd.print("Temp. incial: ");
     lcd.print(temp_act);
     if (digitalRead(pin_boton_mas) == HIGH && temp_act >= temp_min && digitalRead(pin_boton_mas) == HIGH && temp_act < temp_max) {
-      temp_act += 3;
+      temp_act += 10;
     }
     if (digitalRead(pin_boton_menos) == HIGH && temp_act > temp_min && digitalRead(pin_boton_menos) == HIGH && temp_act <= temp_max) {
-      temp_act -= 3;
+      temp_act -= 10;
     }
     if (digitalRead(pin_boton_ok) == HIGH) {
       return true;
