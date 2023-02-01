@@ -21,14 +21,13 @@ La principal motivación tras este proyecto es buscar una solución económica a
 1 * Potenciometro 10kO. <br />
 1 * LCD 16*4 segmentos. <br />
 
-
 ## Resultados
 
 La posibilidad de usar un amplio rango de temperatura estable ha dado lugar a múltiples aplicaciones extra, desde el anteriormente mencionada creación de PCBs pasando por facilitar soldaduras por aire manteniendo la zona caliente o secado de filamento de impresora 3D.
 
 ## Observaciones
 
-Se necesita que el Atmega use la frecuencia de relog interna de 8MHz, para ello se necesita grabar el bootloader por uno sin los parametros de Arduino, tanto en este repositorio como en la bibliografía encontrará información de como hacerlo.
+Se necesita que el Atmega use la frecuencia de relog interna de 8MHz, para ello se necesita grabar el bootloader por uno sin los parametros de Arduino, en la bibliografía encontrará información de como hacerlo.
 
 ## Bibliografía
 
