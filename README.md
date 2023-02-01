@@ -1,7 +1,7 @@
 
 # rFLOW - FabLab Mérida
 
-Proyecto made in FabLab Mérida por el cual mediante el reciclaje de una antiga plancha de vapor y algunos componentes, se ha convertido en una estacion de soldadura BGA monocapa. Capaz de llegar hasta 250º, ideal para multiples tipos de pasta de estaño.
+Proyecto made in FabLab Mérida por el cual mediante el reciclaje de una antigua plancha de vapor y algunos componentes electronicos, se ha convertido en una estación de soldadura BGA monocapa. Capaz de llegar hasta 250º, ideal para multiples tipos de pasta de estaño.
 
 ## Materiales 
 
