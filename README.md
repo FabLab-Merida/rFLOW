@@ -3,6 +3,10 @@
 
 Proyecto made in FabLab Mérida por el cual mediante el reciclaje de una antigua plancha de vapor y algunos componentes electronicos, se ha convertido en una estación de soldadura BGA monocapa. Capaz de llegar hasta 250º, ideal para multiples tipos de pasta de estaño.
 
+## Motivación  
+
+La principal motivación tras este proyecto es buscar una solución económica a la creacion de PCBs y reparación de estas promoviendo la economia circular y el reciclaje de componentes y piezas.
+
 ## Materiales 
 
 1 * Relé de 5V que soporte como miínimo 250V y 13A. <br />
@@ -12,10 +16,15 @@ Proyecto made in FabLab Mérida por el cual mediante el reciclaje de una antigua
 1 * ATMEGA 328p. <br />
 3 * Botones Push. <br />
 3 * Resistencias de 1kO. <br />
-1 * Resistencia de "sepadios" kO. <br />
-1 * Condensador de "sepadios" uF. <br />
+1 * Resistencia de 4.7kO. <br />
+1 * Condensador de 10uF. <br />
 1 * Potenciometro 10kO. <br />
-1 * LCD 16*4. <br />
+1 * LCD 16*4 segmentos. <br />
+
+
+## Resultados
+
+La posibilidad de usar un amplio rango de temperatura estable ha dado lugar a múltiples aplicaciones extra, desde el anteriormente mencionada creación de PCBs pasando por facilitar soldaduras por aire manteniendo la zona caliente o secado de filamento de impresora 3D.
 
 ## Observaciones
 
@@ -25,4 +34,4 @@ Se necesita que el Atmega use la frecuencia de relog interna de 8MHz, para ello 
 
 LiquidCrystal.h          ==> https://www.arduino.cc/reference/en/libraries/liquidcrystal/ <br />
 thermistor.h             ==> https://github.com/miguel5612/ThermistorLibrary <br />
-Grabar bootloader        ==>  https://imasdcasero.wordpress.com/2016/06/06/arduino-con-oscilador-interno/ <br />
+Grabar bootloader        ==> https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard <br />
